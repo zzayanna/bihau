@@ -1,0 +1,114 @@
+.news_on_img{
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-size: 16px;
+	line-height: 130%;
+	margin-top: 71px;
+	margin-left: 70px;
+	margin-bottom: 80px;
+	max-width: 980px;
+}
+.news_on_img a{
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #3725E4;
+}
+
+.hover{
+	color: #3725E4;
+}
+
+.news_on_img__title{
+	max-width: 720px;
+	/* padding-top: 110px; */
+} /* padding только получилось отступить margin отступает вместе с меню боковым  */
+.news_on_img__title h1{
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 40px;
+	color: #000000;
+}
+.news_on_img__title img{
+	margin: 15px 0px 15px 15px;
+}
+.news_on_img__content{
+	/* width: 70%; */
+margin-bottom: 50px;
+}
+.news_on_img__citat{
+	font-family: 'Georgia';
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 45px;
+	max-width: 620px;
+}
+.news_on_img__content h2{
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.news_on_img__content img{
+	border-radius: 30px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.button__back{
+	margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+
+.news_on_img{
+
+	margin-left: 20px;
+
+}
+
+.news_on_img__content img{
+	width: 95%;
+}
+
+.news_on_img__content h2, .news_on_img__content p{
+	margin-left: 30px;
+	max-width: 670px;
+}
+
+}
+
+@media (max-width: 500px) {
+
+	#mainCont, footer {
+		width: 360px;
+	}
+
+	.news_on_img__title h1{
+		font-size: 26px;
+	}
+
+	.news_on_img {
+		margin-left: 10px;
+		margin-top: 30px;
+	}
+	
+	.news_on_img__content img{
+		width: 100%;
+		position: relative;
+		left: -5px;
+
+	}
+	
+	.news_on_img__content h2, .news_on_img__content p{
+		margin-left: 0px;
+		max-width: 670px;
+	}
+
+	/* #mainCont { border: 1px solid black;} */
+}

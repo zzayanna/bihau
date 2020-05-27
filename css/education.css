@@ -1,0 +1,229 @@
+/* :root {
+    --mainColor: #3725E4;
+} */
+
+/* .sec1, .sec1 h1, .sec1 p, .card, 
+.card > div, .card div div, #nev, #addr1,
+#m1, #m2, #m3, #m4, #m4 div, .tel, .tel div, .m1_b, .m3_b, cov { border: 1px solid var(--mainColor) } */
+
+.sec1 h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    margin-top: 71px;
+}
+
+.sec1 h1,
+.sec1 h2,
+.sec1 p,
+#tgs,
+#addr {
+    padding-left: 65px;
+    width: 720px;
+}
+
+#vline1 {
+    margin: 14px 0 19px 83px;
+
+}
+
+
+
+
+
+
+.sec1 p {
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    padding-bottom: 16px;
+}
+
+.sec1 .b {
+    font-weight: bold;
+}
+
+.sec1 h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 29px;
+    padding-bottom: 28px;
+}
+
+#tgs {
+    width: 100%;
+    line-height: 3.8em;
+}
+
+#tgs span {
+    padding: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    border-radius: 23px;
+    margin-right: 16px;
+    margin-bottom: 45px;
+}
+
+#tgs a {
+    color: var(--hoverColor)
+}
+
+#addr {
+    margin-top: 22px;
+    margin-bottom: 48px;
+}
+
+#addr>img {
+    margin-right: 14px;
+
+}
+
+
+/* карточка */
+
+.card {
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 100px;
+    /* margin-bottom: 53px; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card>div {
+    /* overflow: hidden; */
+    max-width: 311px;
+    height: 480px;
+    margin-right: 16px;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.14);
+    border-radius: 22px;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; */
+
+}
+
+.card_img {
+    width: 100%;
+    border-radius: 22px 22px 0px 0px;
+}
+
+
+.card h3 {
+    font-style: normal;
+    font-weight: bold;
+    width: 90%;
+    height: 60px;
+    ;
+    font-size: 22px;
+    /* font-size: 1.3vw; */
+    line-height: 21px;
+    position: relative;
+    top: -90px;
+    left: 24px;
+    /* padding-right: 10px; */
+    color: #FFFFFF;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.card div div {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 24px;
+    position: relative;
+    top: -60px;
+
+}
+
+.hc1 {
+    position: relative;
+    top: 450px;
+    height: 170px;
+    overflow: auto;
+}
+
+.card_arrow {
+    text-align: right;
+    margin-right: 14px;
+
+}
+
+
+/* карточка */
+
+
+#car3,
+#car6 {
+    width: 70%;
+}
+
+#car7 {
+    margin-bottom: 141px;
+}
+
+@media (max-width: 768px) { 
+.sec1 h1,
+.sec1 h2,
+.sec1 p,
+#tgs,
+#addr {
+    padding-left: 35px;
+}
+.card {
+    padding-left: 25px;
+    padding-right: 50px;
+    margin-bottom: 53px;
+}
+
+}
+
+@media (max-width: 500px) { 
+
+    #mainCont {
+        width: 360px;
+    }
+
+    .sec1 h1, .sec1 h2, .sec1 p, #tgs,
+    #addr {
+        padding-left: 10px;
+    }
+
+    .sec1 h1 {
+        margin-top: 40px;
+    }
+
+    .sec1 p, .sec1 h2 {
+        width: 350px; 
+    }
+
+    #vline1 {
+        margin: 20px 0 19px 26px;
+
+    } 
+
+    .card {
+        flex-direction: column;
+        padding-right: 0;
+        padding-left: 20px;
+        margin-bottom: 0;
+    }
+
+    #car1 > div {
+        height: 400px;
+    }
+
+    .card div {
+        width: 320px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}

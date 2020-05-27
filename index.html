@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Bykhau</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body id="bodyContainer" onload="startres()" onresize="res()">
+
+    <!-- для IE -->
+    <script type="text/javascript">
+        if ((Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) || (navigator.appName == 'Microsoft Internet Explorer')) {
+        alert("Обновите браузер");
+        location.assign('https://www.microsoft.com/ru-ru/edge/'); }          
+    </script>
+
+    <div id="mainContainer">
+
+    <div id="video-bg">
+    <video loop="" muted="" autoplay="">
+        <source src="img/byhov.mp4" type="video/mp4">
+        <source src="img/byhov.webm" type="video/webm">
+        <source src="img/byhov.ogv" type="video/ogg">         
+    </video>
+    </div>
+
+<nav id="burger_menu"><img id="burg_icon" src="img/burger_menu.svg" alt=""></nav>
+
+<header style="margin-bottom: 20px;">
+
+    <div id="logo_ipad">
+        <img id="l1" src="img/logo1.svg" alt="">
+        <img id="l2" src="img/logo2.svg" alt="">
+        <img id="l3" src="img/logo3.svg" alt="">
+    </div>
+
+    <div id="title">
+        Іn<span>novative</span> 
+        By<span>khau</span>
+    </div>
+
+<div id="logo">
+<img id="l1" src="img/logo1.svg" alt="">
+<img id="l2" src="img/logo2.svg" alt="">
+<img id="l3" src="img/logo3.svg" alt="">
+    </div>
+</header>
+
+<section id="sec1" style="margin-bottom: 20px;"> 
+    <nav id="header">
+    <h1 class="z1"><a style="text-decoration: none; color: #000" href="pages/about.html">О нас</a></h1>
+
+    <a href="pages/about.html"><img class="a1" src="img/arrow7.svg" alt=""></a> 
+</nav>
+
+    <p>Сайт разработан в рамках реализации инициативы «Быхов-инновационный», в рамках проекта «Поддержка экономического развития на местном уровне в Республике Беларусь», который финансируется Европейским союзом (ЕС) и реализуется Программой развития ООН (ПРООН) в партнерстве с Министерством экономики Республики Беларусь. Изложенная информация не отражает официальную позицию Европейского союза, ПРООН и Министерства экономики Республики Беларусь.
+    </p>
+<div id="social">
+    <a href="#"><img src="img/s1.svg" alt=""></a>
+    <a href="#"><img src="img/s2.svg" alt=""></a>
+    <a href="#"><img src="img/s3.svg" alt=""></a>
+    <a href="#"><img src="img/s4.svg" alt=""></a>
+</div>
+</section>
+
+<section id="mainMenu" style="margin-bottom: 20px;"></section>
+<section id="soonEvent" style="margin-bottom: 20px;"><h1 class="z1">Ближайшие мероприятия</h1></section>
+<section id="eventMenu" style="margin-bottom: 20px;"></section>
+
+<nav id="footer"></nav> 
+
+<div id="social_cont">
+    <div id="social_android">
+        <a href="#"><img src="img/s1.svg" alt=""></a>
+        <a href="#"><img src="img/s2.svg" alt=""></a>
+        <a href="#"><img src="img/s3.svg" alt=""></a>
+        <a href="#"><img src="img/s4.svg" alt=""></a>
+    </div>
+    </div>
+    
+    <div id="logo_android">
+        <img id="l1" src="img/logo1.svg" alt="">
+        <img id="l2" src="img/logo2.svg" alt="">
+        <img id="l3" src="img/logo3.svg" alt="">
+    </div>
+
+<div class="burg1">
+    <div>
+        <img src="img/close.svg" alt="">
+    </div>
+    <div id="bMenu">
+    </div>
+    <div class="social msocial">
+        <a href="#"><img src="img/s1.svg" alt=""></a>
+        <a href="#"><img src="img/s2.svg" alt=""></a>
+        <a href="#"><img src="img/s3.svg" alt=""></a>
+        <a href="#"><img src="img/s4.svg" alt=""></a>
+    </div>
+</div>
+
+</div> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="libs/menu.js"></script> 
+
+<script>
+
+function startres() {
+    res();
+    setTimeout('document.body.style.opacity="1"', 100)
+}
+
+    function res() {
+     let w = document.documentElement.clientWidth;  
+     let h = document.documentElement.clientHeight;
+     
+    // alert(w+" "+h); 
+    // 1349 х 657
+      
+        // if (h>760) { 
+         
+     if (h<1024) { 
+     bodyContainer.style.height = `${h-3}px`;
+     mainContainer.style.height =  `${h-3}px`;
+
+     } else {
+        bodyContainer.style.height = '1024px';
+     mainContainer.style.height =  '1024px';
+
+     }
+
+    // }
+
+     if (w<1400) { 
+       social.style.marginTop = '5px';
+       eventMenu.style.marginBottom = '0px';
+
+    he = document.getElementsByTagName('header');
+     for (i=0; i<he.length; i++) {
+    he[i].style.marginBottom = '0px';  }
+
+     z1 = document.getElementsByClassName('z1');
+     for (i=0; i<z1.length; i++) {
+        z1[i].style.fontSize = '16px';  }
+
+     m = document.getElementsByClassName('m');
+     for (i=0; i<m.length; i++) {
+        m[i].style.height = '100px';  }   
+
+    //  e = document.getElementsByClassName('e');
+    //  for (i=0; i<e.length; i++) {
+    //     e[i].style.height = '127px';  } 
+     
+     date = document.getElementsByClassName('date');
+     for (i=0; i<date.length; i++) {
+        date[i].style.marginTop = '-15px';  } 
+
+     } else {
+
+       social.style.marginTop = '23px';
+
+       he = document.getElementsByTagName('header');
+       for (i=0; i<he.length; i++) {
+       he[i].style.marginBottom = '20px';  }
+
+        z1 = document.getElementsByClassName('z1');
+        for (i=0; i<z1.length; i++) {
+        z1[i].style.fontSize = '18px';  }
+
+        m = document.getElementsByClassName('m');
+        for (i=0; i<m.length; i++) {
+        m[i].style.height = '110px';  }  
+        
+        // e = document.getElementsByClassName('e');
+        // for (i=0; i<e.length; i++) {
+        // e[i].style.height = '147px';  }    
+
+        date = document.getElementsByClassName('date');
+        for (i=0; i<date.length; i++) {
+        date[i].style.marginTop = '-5px';  } 
+
+     }
+
+     if (w<500) { 
+        bodyContainer.style.height = `1277px`;
+        m = document.getElementsByClassName('m');
+        for (i=0; i<m.length; i++) {
+        m[i].style.height = '165px';  }   
+    }
+
+
+
+    // console.log(`w: ${w}, h: ${h}`)    
+}
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/education.css">
+    <link rel="stylesheet" href="../css/forrms.css">
+</head>
+
+<body id="bodyContainer" onload="startres()" onresize="res()">
+
+    <!-- для IE -->
+    <script type="text/javascript">
+        if ((Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) || (navigator.appName ==
+                'Microsoft Internet Explorer')) {
+            alert("Обновите браузер");
+            location.assign('https://www.microsoft.com/ru-ru/edge/');
+        }
+    </script>
+
+    <div id="header_mobile">
+        <div id="logo_pages_small"><a href="../index.html"><span id="mc">Іn</span><span>By</span></a></div>
+        <nav id="burgerMenu"><img id="burg_icon" src="../img/burger_menu.svg" alt="">
+        </nav>
+    </div>
+
+    <aside id="side">
+        <div id="side_cont">
+            <div id="logo_pages"><a href="../index.html"><span id="mc">Іn</span><span>By</span></a></div>
+            <div id="side_menu"></div>
+            <div id="social">
+                <a href="#"><img src="../img/s1.svg" alt=""></a>
+                <a href="#"><img src="../img/s2.svg" alt=""></a>
+                <a href="#"><img src="../img/s3.svg" alt=""></a>
+                <a href="#"><img src="../img/s4.svg" alt=""></a>
+            </div>
+        </div>
+    </aside>
+
+    <main id="mainCont">
+
+        <section class="sec1">
+            <div>
+                <h1>Курсы</h1>
+                <img id="vline1" src="../img/line1.svg" alt="">
+            </div>
+            <div>
+                <p>
+                    Станьте востребованным специалистом, изучив понравившуюся IT-специальность на наших курсах абсолютно
+                    бесплатно. Наши преподаватели – практикующие специалисты IT-сферы помогут вам получить все
+                    необходимые навыки для поиска будущей работы.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="sec1">
+            <h2>Чему вы хотите учиться?</h2>
+            <div id="tgs">
+                <script src="../libs/edu_menu.js"></script>
+            </div>
+        </section>
+
+
+        <section class="sec1">
+            <h2>Наши замечательные преподаватели</h2>
+        </section>
+
+        <section id="car1" class="sec1 card"> </section>
+
+        <section class="sec1">
+            <a name="e1">
+                <h2>Управление и бизнес анализ</h2>
+            </a>
+        </section>
+
+        <section id="car2" class="sec1 card"> </section>
+
+        <section id="car2_1" class="sec1 card"> </section>
+
+
+        <section class="sec1">
+            <a name="e3">
+                <h2>Разработка и тестирование ПО </h2>
+            </a>
+        </section>
+
+        <section id="car4" class="sec1 card"> </section>
+
+        <section id="car5" class="sec1 card"> </section>
+
+
+        <section class="sec1">
+            <a name="e4">
+                <h2>Курсы-интенсивы</h2>
+            </a>
+        </section>
+
+        <section id="car6" class="sec1 card"> </section>
+
+
+        <section class="sec1">
+            <a name="e6">
+                <h2>Маркетинг и продажи </h2>
+            </a>
+        </section>
+
+        <section id="car8" class="sec1 card"> </section>
+
+
+
+        <section class="sec3">
+            <div id="f1">
+                <h2>Напишите нам и мы свяжемся с вами</h2>
+                <form action="#">
+                    <input type="text" name="fname" placeholder="Ваше имя">
+                    <input type="email" name="eml" placeholder="Ваш e-mail">
+                    <textarea name="mess" placeholder="Текст комментария"></textarea>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+            <div id="f2">
+                <img src="../img/house.svg" alt="">
+                <p>+375 29 758 67 33</p>
+                <p>innovativebykhov@gmail.com</p>
+                <p>г.Быхов, ул. Советская., 2А</p>
+            </div>
+
+        </section>
+    </main>
+    <footer id="foot0">
+        <div class="social mobsocial">
+            <a href="#"><img src="../img/s1.svg" alt=""></a>
+            <a href="#"><img src="../img/s2.svg" alt=""></a>
+            <a href="#"><img src="../img/s3.svg" alt=""></a>
+            <a href="#"><img src="../img/s4.svg" alt=""></a>
+        </div>
+        <div id="foot1">
+            <a href="about.html">О нас</a> |
+            <a href="#">О проекте</a>
+        </div>
+        <div id="foot2">Сайт разработан в рамках реализации инициативы «Быхов-инновационный»,
+            в рамках проекта «Поддержка экономического развития на местном уровне
+            в Республике Беларусь», который финансируется Европейским союзом (ЕС)
+            и реализуется Программой развития ООН (ПРООН) в партнерстве
+            с Министерством экономики Республики Беларусь
+        </div>
+        <div id="logo">
+            <img src="../img/logo1.svg" alt="">
+            <img src="../img/logo2.svg" alt="">
+            <img src="../img/logo3.svg" alt="">
+        </div>
+    </footer>
+
+    <div class="burg1">
+        <div>
+            <img src="../img/close.svg" alt="">
+        </div>
+        <div id="bMenu">
+        </div>
+        <div class="social msocial">
+            <a href="#"><img src="../img/s1.svg" alt=""></a>
+            <a href="#"><img src="../img/s2.svg" alt=""></a>
+            <a href="#"><img src="../img/s3.svg" alt=""></a>
+            <a href="#"><img src="../img/s4.svg" alt=""></a>
+        </div>
+    </div>
+
+    <div id="upward">
+        <div id="arr"><a href="#top"><img src="../img/up_arrow.svg" alt=""></a></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../libs/side_menu.js"></script>
+    <script src="../libs/education.js"></script>
+
+
+    <script>
+        function startres() {
+            res();
+            setTimeout('document.body.style.opacity="1"', 100)
+        }
+
+        function res() {
+            let w = document.documentElement.clientWidth;
+            let h = document.documentElement.clientHeight;
+            side.style.height = `${h-3-180}px`;
+            box = document.getElementsByClassName('box_menu');
+
+            for (i = 0; i < box.length; i++) {
+                let hi1, hi = h / 6 - 85;
+
+                if (hi < 55) {
+                    hi1 = 55
+                } else if (h > 1400) {
+                    hi1 = 263
+                } else {
+                    hi1 = hi
+                }
+
+                box[i].style.height = `${hi1}px`;
+            }
+
+            if (w < 1400) {
+                side.style.width = '275px';
+                mainCont.style.left = '321px';
+                foot0.style.marginLeft = '60px';
+                foot1.style.width = '220px';
+                foot2.style.marginLeft = '0';
+                f1.style.width = '54%';
+                f2.style.width = '23%';
+
+            } else {
+                side.style.width = '375px';
+                mainCont.style.left = '421px';
+                foot0.style.marginLeft = '160px';
+                foot1.style.width = '146px';
+                foot2.style.marginLeft = '176px';
+                f1.style.width = '64%';
+                f2.style.width = '18%';
+
+            }
+            if (w<770) { 
+                foot0.style.marginLeft = '15px';
+            }
+
+            if (w<600) { 
+                foot0.style.marginLeft = '0px';
+                foot2.style.marginLeft = '15px';
+                f1.style.width = '276px';
+                f2.style.width = '219px';
+            }
+
+
+            // console.log(`w: ${w}, h: ${h}`)    
+
+            function scrl() {
+
+                let pw;
+
+                if (w < 1400) {
+                    pw = w - 120
+                } else {
+                    pw = w - 180
+                }
+                if (w<600) {pw = w - 230 }
+
+                let ph = h / 2 - 100
+
+                if (pageYOffset > h / 3) {
+
+                    arr.style.top = ph + "px"
+                    arr.style.left = pw + "px"
+
+                    upward.style.display = "block"
+
+                } else upward.style.display = ''
+            }
+
+            window.addEventListener('scroll', scrl)
+
+
+        }
+    </script>
+
+    <div id="mydiv0">
+        <div id="myform0" class="forrms">
+            <img onclick="mydiv0.style.display = 'none'" src="../img/esc.svg" alt="exit">
+            <h2>Напишите нам и мы свяжемся с вами</h2>
+            <form action="serv.php">
+                <input type="name" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="eml" placeholder="Ваш e-mail" required>
+                <input type="tel" name="tel" placeholder="Ваш номер телефона" required>
+                <p>+375 xx xxx xx xx</p>
+                <textarea name="mess" placeholder="Текст комментария" required></textarea>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+
+    </div>
+
+    <script src="../libs/form.js"></script>
+
+</body>
+
+</html>

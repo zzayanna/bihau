@@ -1,0 +1,221 @@
+
+.sec1 h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    margin-top: 71px;
+    }
+ 
+    .sec1 h1, .sec1 h2, .sec1 p, .sec1 li {
+        padding-left: 65px;
+        width: 656px; 
+    }
+       
+        #vline1 {
+            margin: 14px 0 19px 83px;
+
+        }
+        
+        
+        .sec1 h2 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            padding-bottom: 27px;
+        }
+        
+        .sec1 p, .sec1 ul {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        
+        .sec1 .b {
+            font-weight: bold;  
+        }
+        
+        .sec1 ul {
+            list-style: none;
+            padding: 12px 0 12px 0;
+            padding-bottom: 0;
+        }
+        
+        .sec1 li {
+            padding-bottom: 20px;
+        }
+        
+        .sec1 .pic {
+            margin: 47px 0 47px 0;
+            width: 984px;
+            height: 496px;
+            display: flex;
+            align-items: center;
+            border-radius: 22px;
+            overflow: hidden;
+        }
+
+          #pic1 { 
+            width: 100%;
+            /* padding: 0 160px 0 30px; */
+        }
+
+        #pic2 {
+            padding-left: 30px;
+        }
+        
+         .sec1 a {
+            color: var(--mainColor);
+        }
+        
+        .pic > p {
+            font-family: Georgia;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 16px;
+            width: 273px;
+            margin-left: 41px;
+            padding-left: 0;
+        }
+        
+
+
+
+
+        .sec2 {
+            padding: 49px 0 46px 0;
+            margin-left: 35px;
+            margin-right: 100px;
+            /* border: 1px solid #F3F3F3;  */
+        }
+        .sec2 h2{
+            margin-top: 70px;
+            margin-left: -30px;
+            margin-bottom: -20px;
+        }
+        #part {
+            width: 100%;
+            height: 160px;
+            /* margin: 50px 0 0 0; */
+            display: flex;
+        }
+        
+        #part div {  
+            width: 160px;
+            height: 50px;
+            /* height: 100%; */
+            border-left: 1px solid #F3F3F3;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            margin: auto;
+        }
+        
+        #part div:last-child {
+            border-right: 1px solid #F3F3F3;
+        }
+        #part img{
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+
+            .sec1 h1 {
+                margin-top: 31px;
+                }
+
+            #vline1 {
+                margin-left: 50px;
+        
+            }
+             
+            .sec1 h1, .sec1 h2, .sec1 p, .sec1 li {
+                padding-left: 35px;
+            }
+
+            #pic1 { 
+                width: 670pt;
+                padding-left: 20px;
+            }
+
+            #pic2 {
+                width: 348px;
+                padding-left: 20px;
+            }
+
+            .pic > p {
+                margin-left: 35px;
+            }
+
+            #part {
+                margin-left: 30px;
+            }
+
+            .sec2 div{
+                padding-left: 20px;
+                padding-right: 20px;
+                justify-content: space-around;
+            }
+     
+
+        }
+
+        @media (max-width: 500px) {
+
+            #mainCont, footer {
+                width: 360px;
+            }
+
+            .sec1 h1, .sec1 h2, .sec1 p, .sec1 li {
+                padding-left: 10px;
+            }
+    
+            #vline1 {
+                margin-left: 30px;
+            }
+    
+            .sec1 div p, .sec1 div h2 {
+                width: 350px;
+            }
+    
+            .sec1 .pic {
+                max-width: 344px;
+                height: 360px;
+                border-radius: 22px;
+                overflow: hidden;
+                margin: 20px 5px 20px 5px; 
+            }
+    
+            #pic1 {
+                /* width: 200%; */
+                padding-left: 0;
+            }
+    
+            .sec2 {
+                margin-left: 0px;
+                padding: 20px 0 30px 0;
+                width: 360px;
+            }
+
+            .sec2 h2 {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+    
+            .sec2 div {
+                padding-left: 0px;
+                padding-right: 0;
+            }
+    
+            #part {
+                margin: 0;
+                width: 360px;
+                display: flex;
+                justify-content: space-between;
+            }
+     
+            #part div:nth-child(1) img{
+                width: 95%;
+            }
+        }

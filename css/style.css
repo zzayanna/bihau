@@ -1,0 +1,753 @@
+:root {
+    --mainColor: #3725E4;
+    --hoverColor: #5745FF;
+    --mainWidth: 1290px;
+    --ipadWidth: 768px;
+    --androidWidth: 360px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}
+
+/* body, #mainContainer, #video-bg, header, #title, #logo, #logo > img, 
+#header, main, #social, #sContainer, 
+#mainMenu, #mainMenu > div, #eventMenu, #eventMenu > div, #footer,
+#footer > div, section { border: 1px solid var(--mainColor) } */
+
+
+
+body {
+    opacity: 0;
+    font-family: Gotham Pro;
+    max-width: 1600px;
+    min-width: 1033px;
+    margin: 0 auto;
+
+}
+
+
+a {
+    transition: .3s
+}
+
+a:hover {
+    color: var(--hoverColor)
+}
+
+
+#mainContainer {
+    max-width: var(--mainWidth);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* видео */
+#video-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-size: cover;
+}
+
+#video-bg>video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+}
+
+@supports (object-fit: cover) {
+    #video-bg>video {
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* видео  */
+
+
+
+
+
+header,
+#header,
+section,
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header {
+    padding-top: 17px;
+
+}
+
+#header {
+    width: 346px;
+    height: 25px;
+}
+
+#header>h1,
+#soonEvent>h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase
+}
+
+
+#title {
+    /* ІnnovationByKhau */
+
+    width: 562px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 77px;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+
+#title>span {
+    color: var(--mainColor);
+}
+
+#logo {
+    width: 450px;
+    height: 153px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+#logo>img:nth-child(1) {
+    position: relative;
+    height: 150px
+}
+
+#logo>img:nth-child(2) {
+    position: relative;
+    top: -17px;
+    height: 150px
+}
+
+#logo>img:nth-child(3) {
+    position: relative;
+    top: 10px;
+    height: 180px
+}
+
+
+
+#sec1 {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-self: flex-start;
+}
+
+#sec1>p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+}
+
+#social {
+    width: 195px;
+    margin-top: 23px;
+    display: flex;
+    /* display: none; */
+    justify-content: space-between;
+}
+
+
+#mainMenu>div {
+    width: 270px;
+    height: 110px;
+    margin-right: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#mainMenu div div {
+    height: 60px;
+}
+
+#mainMenu h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--mainColor);
+}
+
+#mainMenu div div,
+#eventMenu p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    
+    width: 4px;
+    border: 1px solid;
+}
+::-webkit-scrollbar-thumb {
+    background-color:#000000;
+}
+
+#eventMenu {
+    align-self: flex-start;
+}
+
+
+#eventMenu>div {
+    width: 370px;
+    height: 147px;
+    margin-right: 50px;
+    padding: 20px;
+
+}
+
+#eventMenu div div {
+    width: 100%;
+
+}
+
+#eventMenu div * {
+    padding: 5px;
+}
+
+.date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+#eventMenu h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#eventMenu a {
+    padding-left: 0;
+    text-decoration: none;
+}
+
+#arr_mob {
+    display: none;
+}
+
+.eventOff {
+    color: #000000
+}
+
+.eventOn {
+    color: var(--mainColor)
+}
+
+.currentEvent {
+    border: 2px solid var(--mainColor);
+    border-radius: 24px;
+    color: var(--mainColor)
+}
+
+
+#footer>div {
+    width: 160px;
+    height: 75px;
+    text-align: center;
+    /* margin-bottom: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+
+}
+
+#footer {
+    margin-bottom: 10px;
+}
+
+#footer img {
+    width: 44px;
+    height: 44px;
+}
+
+#footer h2 {
+    width: 100%
+}
+
+#footer a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--mainColor)
+}
+
+
+
+.m a,
+.m a:link,
+.m #a:visited,
+a:active {
+    text-decoration: none;
+}
+
+
+.m a {
+    transition: .3s;
+    color: #000000;
+}
+
+.m a:hover {
+    color: var(--hoverColor)
+}
+
+.m h2 a {
+    color: var(--mainColor)
+}
+
+.burg1,
+#logo_ipad,
+#burger_menu,
+#social_android,
+#logo_android {
+    display: none;
+}
+
+@media (max-width: 1600px) {
+    body {
+        padding: 0 20px;
+    }
+
+    #title {
+        /* color: red; */
+        font-size: 50px;
+        width: 350px;
+        /* border: 1px solid red; */
+        /* 57 */
+    }
+
+
+    #logo {
+        /* width: 450px; */
+        height: 53px;
+    }
+
+    #l1 {
+        width: 150px;
+        /* border: 1px solid red; */
+    }
+
+    #sec1 p,
+    #sec1 h {
+        width: 90%;
+    }
+
+    #social img {
+        height: 30px;
+    }
+
+    #social {
+        width: 165px;
+    }
+
+    #footer {
+        margin-top: 10px;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        max-width: var(--ipadWidth);
+        min-width: var(--ipadWidth);
+        padding: 0;
+        height: 1105px;
+    }
+
+    #mainContainer {
+        width: var(--ipadWidth);
+        height: 1105px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #burger_menu {
+        width: 768px;
+        height: 62px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #burger_menu img {
+        margin-right: 35px;
+        cursor: pointer;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #logo_ipad {
+        display: block;
+        width: 360px;
+        height: 153px;
+        position: relative;
+        top: -20px;
+        left: 20px;
+    }
+
+    #logo_ipad img:nth-child(1) {
+        position: relative;
+        top: -4px;
+    }
+
+    #logo_ipad img:nth-child(2) {
+        position: relative;
+        top: -4px;
+        left: 15px;
+    }
+
+    #logo_ipad img:nth-child(3) {
+        position: relative;
+        top: 15px;
+        left: 30px;
+    }
+
+    #title {
+        width: 562px;
+        height: 153px;
+        margin-left: 32px;
+        font-size: 77px;
+    }
+
+    #header {
+        width: 348px;
+        height: 17px;
+        margin: 10px 0 0 35px;
+    }
+
+    #header h1 {
+        margin-right: 20px;
+    }
+
+    #sec1 p {
+        width: 692px;
+        height: 104px;
+        margin: 22px 0 5px 35px;
+    }
+
+    #social {
+        width: 195px;
+        height: 36px;
+        margin: 5px 0 0 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #mainMenu {
+        width: 700px;
+        height: 260px;
+        margin: 34px 0 0 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    #eventMenu {
+        width: 700px;
+        height: 162px;
+        margin-left: 35px;
+    }
+
+    #soonEvent>h1 {
+        margin-left: 35px;
+    }
+
+    #footer {
+        display: none;
+    }
+
+    /* Menu */
+
+    .burg1 {
+        width: 360px;
+        height: 1024px;
+        position: absolute;
+        top: 7px;
+        left: 390px;
+        background: #FFFFFF;
+        animation: a1 .3s;
+    }
+
+    @keyframes a1 {
+
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .burg1>div:nth-child(1) {
+        display: flex;
+        justify-content: flex-end;
+        padding: 12px 13px 16px 0;
+    }
+
+    .burg1>div:nth-child(1) {
+        cursor: pointer;
+    }
+
+    #bMenu {
+        margin-left: 28px;
+    }
+
+    #bMenu div {
+        height: 44px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    #bMenu div h2 {
+        color: var(--mainColor);
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    #bMenu div img {
+        margin-right: 16px;
+    }
+
+    #bMenu div a {
+        text-decoration: none;
+    }
+
+    .msocial {
+        margin: 398px 0 46px 17px;
+    }
+
+    /* Menu */
+
+}
+
+@media (max-width: 500px) {
+
+    body {
+        max-width: var(--androidWidth);
+        min-width: var(--androidWidth);;
+        height: 1277px;
+        margin: 0 auto;
+        font-family: Gotham Pro;
+        padding: 0;
+    }
+
+    #mainContainer {
+        width: var(--androidWidth);
+        height: 1277px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .burg1,
+    #logo_ipad,
+    #social,
+    #logo,
+    #footer {
+        display: none;
+    }
+
+    #burger_menu {
+        width: var(--androidWidth);
+        height: 48px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #burger_menu img {
+        margin-right: 13px;
+    }
+
+    header {
+        padding-top: 0;
+    }
+
+    #title {
+
+        width: 315px;
+        height: 80px;
+        font-size: 40px;
+        margin-left: 13px;
+    }
+
+    #header {
+        margin: 20px 0 0 13px;
+        width: 330px;
+    }
+
+    #header>a img {
+        width: 246px;
+    }
+
+    #soonEvent>h1 {
+        margin: 60px 0 0 15px;
+    }
+
+    #sec1>p {
+        width: 320px;
+        margin: 20px 0 0 13px;
+    }
+
+    #mainMenu {
+        width: 360px;
+        height: 360px;
+        margin: 55px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: space-between;
+    }
+
+    #mainMenu>div {
+        width: 156px;
+        height: 165px;
+        margin: 0 0 0 13px;
+    }
+
+    #mainMenu div div {
+        height: 90px;
+    }
+
+    #arr_mob {
+        display: block;
+    }
+
+    .currentEvent {
+        border: none;
+    }
+
+    #eventMenu {
+        margin: 27px 0 0 15px;
+    }
+
+    #eventMenu>div {
+        width: 336px;
+        height: 140px;
+        padding: 0;
+
+    }
+
+    #eventMenu div p {
+        margin-right: 40px;
+    }
+
+    #eventMenu div * {
+        padding-left: 0;
+    }
+
+    #social_cont {
+        width: 330px;
+        border-top: 1px solid #F3F3F3;
+        margin: 26px 0 0 15px;
+    }
+
+    #social_android {
+        padding-top: 24px;
+        width: 195px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo_android {
+        display: block;
+        margin-bottom: 85px;
+    }
+
+    #logo_android img:nth-child(1) {
+        position: relative;
+        left: -6px;
+        top: 20px;
+    }
+
+    #logo_android img:nth-child(2) {
+        position: relative;
+        top: 10px;
+        left: -10px;
+    }
+
+    #logo_android img:nth-child(3) {
+        position: relative;
+        top: 20px;
+        left: 0px;
+    }
+
+    /* Menu */
+
+    .burg1 {
+        height: 640px;
+        position: relative;
+        top: -1330px;
+        left: 0px;
+    }
+
+    .msocial {
+        margin: 54px 0 46px 17px;
+    }
+
+    /* Menu */
+}

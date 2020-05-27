@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бизнес-инкубатор</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/incubator.css">
+    <link rel="stylesheet" href="../css/forrms.css">
+</head>
+
+<body id="bodyContainer" onload="startres()" onresize="res()">
+
+    <!-- для IE -->
+    <script type="text/javascript">
+        if ((Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) || (navigator.appName ==
+                'Microsoft Internet Explorer')) {
+            alert("Обновите браузер");
+            location.assign('https://www.microsoft.com/ru-ru/edge/');
+        }
+    </script>
+
+    <div id="header_mobile">
+        <div id="logo_pages_small"><a href="../index.html"><span id="mc">Іn</span><span>By</span></a></div>
+        <nav id="burgerMenu"><img id="burg_icon" src="../img/burger_menu.svg" alt="">
+        </nav>
+    </div>
+
+
+    <div class="burg1">
+        <div>
+            <img src="../img/close.svg" alt="">
+        </div>
+        <div id="bMenu">
+        </div>
+        <div class="social msocial">
+            <a href="#"><img src="../img/s1.svg" alt=""></a>
+            <a href="#"><img src="../img/s2.svg" alt=""></a>
+            <a href="#"><img src="../img/s3.svg" alt=""></a>
+            <a href="#"><img src="../img/s4.svg" alt=""></a>
+        </div>
+    </div>
+
+    <aside id="side">
+        <div id="side_cont">
+            <div id="logo_pages"><a href="../index.html"><span id="mc">Іn</span><span>By</span></a></div>
+            <div id="side_menu"></div>
+            <div id="social">
+                <a href="#"><img src="../img/s1.svg" alt=""></a>
+                <a href="#"><img src="../img/s2.svg" alt=""></a>
+                <a href="#"><img src="../img/s3.svg" alt=""></a>
+                <a href="#"><img src="../img/s4.svg" alt=""></a>
+            </div>
+        </div>
+    </aside>
+
+    <main id="mainCont">
+
+        <section class="sec1">
+            <div>
+                <h1>Бизнес-инкубатор</h1>
+                <img id="vline1" src="../img/line1.svg" alt="">
+            </div>
+            <div>
+                <p>
+                    В рамках бизнес-инкубатора “Быхов инновационный” эксперты из различных областей будут бесплатно
+                    помогать начинающим и действующим предпринимателям Быхова и Быховского района на всех этапах
+                    развития бизнеса: от создания идеи до её реализации, монетизации и масштабирования.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="sec1">
+            <h2>Что вас интересует?</h2>
+            <div id="tgs">
+                <span><a href="#i1">Коворкинг</a></span>
+                <span><a href="#i2">Консалтинг</a></span>
+                <span><a href="#i3">Стартап лаборатория</a></span>
+                <span><a href="education.html">Обучение</a></span>
+            </div>
+        </section>
+
+        <section class="sec1">
+            <div>
+                <a name="i3">
+                    <h1>Стартап-лаборатория</h1>
+                </a>
+                <div id="addr">
+                    <img src="../img/addr.svg" alt="">
+                    <span>г.Быхов, ул. Советская., 2А</span>
+                </div>
+            </div>
+            <div>
+                <p>
+                    В нашей стартап-лаборатории будущие и действующие предприниматели смогут научиться создавать
+                    высокотехнологичные продукты. Мы приглашаем лучших экспертов для обучения и консультации участников
+                    проекта.
+                </p>
+                <p>Мы поможем вам реализовать ваши идеи. После обучения, вы будете знать, как оценивать бизнес-идеи,
+                    создавать работающий продукт и находить финансирование.</p>
+                <p>Приходите и создайте свою инновационную компанию.</p>
+
+
+            </div>
+
+        </section>
+
+        <section id="card" class="sec1 card"> </section>
+
+        <section onclick="forma()" class="sec1" id="df">
+            <img id="nev" src="../img/never.png" alt="">
+            <img id="kolb" src="../img/kolba.png" alt="">
+        </section>
+
+        <section class="sec1">
+            <div id="cons">
+                <a name="i2">
+                    <h1>Консультации</h1>
+                </a>
+                <div id="addr1">
+                    <img src="../img/addr.svg" alt="">
+                    <span>г.Быхов, ул. Советская., 2А</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="sec1">
+            <div id="m1">
+                <div id="m2">
+                    <span>В рамках проекта эксперты в юридической и бухгалтерской сфере бесплатно помогут вам открыть
+                        новый бизнес, разобраться с тонкостями налогообложения, бухгалтерского учета, решить вопросы в
+                        сфере законодательства. </span>
+                    <div id="m4">
+                        <div>
+                            <h3> Консультация юристов</h3>
+                            <span>В рамках бизнес-инкубатора наши адвокаты оказывают бесплатную юридическую помощь по
+                                вопросам открытия и сопровождения бизнеса, проконсультируют по выбору формы
+                                собственности и особенностям дальнейшей деятельности..</span>
+                        </div>
+                        <div>
+                            <h3>Консультация бухгалтеров</h3>
+                            <span>В рамках бизнес-инкубатора наши бухгалтера проведут бесплатные консультации по
+                                вопросам бухгалтерского учета, посоветуют с выбором формы собственности и нюансами в
+                                дальнейшей деятельности.</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="m3" onclick="forma()">
+                    <div class="c1"><img class="card_img" src="../img/inc4.png" alt="">
+                        <h3 class="card_title">У вас есть<br> проект?<br> Мы слушаем!</h3>
+                        <div class="c2">
+                            <span>Если у вас есть интересный проект, который мы можем реализовать вместе - мы с
+                                удовольствием с ним <br>ознакомимся!</span>
+                        </div>
+                        <div class="card_arrow"><img class="arr1" src="../img/arrow10.svg" alt=""></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class='tel' id="tel0">
+                <div><img src="../img/tel.svg" alt=""></div>
+                <div>Запись по телефону
+                    <span>+37529-758-67-33</span></div>
+            </div>
+        </section>
+
+
+        <section class="sec1">
+            <div id="cons">
+                <a name="i1">
+                    <h1>Коворкинг</h1>
+                </a>
+                <div id="addr1">
+                    <img src="../img/addr.svg" alt="">
+                    <span>г.Быхов, ул. Советская., 2А</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec1 sld">
+            <img id="sld1" src="../img/slider2.jpg" alt="">
+            <!-- <img id="arr_left" src="../img/arr_left.svg" alt="">
+    <img id="arr_right" src="../img/arr_right.svg" alt=""> -->
+        </section>
+
+        <section class="sec1">
+            <p id="sld_p"></p>
+        </section>
+
+
+
+        <section class="sec1 cov">
+
+            <div class="m1_b">
+                <h2>Коворкинг</h2>
+                <p>
+                    Коворкинг – пространство для общения и работы, где вы можете воплотить свои идеи. Вы можете не
+                    только работать, но и проводить деловые мероприятия, мастер-классы и обучение. <br>
+                    В нашем коворкинге есть все, что нужно для работы, абсолютно бесплатно: высокоскоростной интернет,
+                    рабочее место, чай и печеньки.
+                </p>
+                <p id="p1">Коворкинг располагается по адресу: Советская ул., 2А, Быхов
+                    <br>
+                    Время работы: пн-пт 9:00–18:00; сб 9:00–13:50
+                </p>
+                <div class='tel' id="tel1">
+                    <div><img src="../img/tel.svg" alt=""></div>
+                    <div>Запись по телефону
+                        <span>+37529-758-67-33</span></div>
+                </div>
+            </div>
+            <div class="m3_b" onclick="forma()">
+
+                <!-- <div id="m3"> -->
+                <div class="c1"><img class="card_img" src="../img/inc5.png" alt="">
+                    <h3 class="card_title">Поработали? <br> Давайте учиться</h3>
+                    <div class="c2">
+                        <span>Возможно, вы хотите стать лектором и у вас есть интересный курс - мы с радостью вас
+                            выслушаем и, возможно, что-то придумаем вместе!</span>
+                    </div>
+                    <div class="card_arrow"><img class="arr1" src="../img/arrow10.svg" alt=""></div>
+                </div>
+
+                <!-- </div> -->
+
+            </div>
+
+        </section>
+
+
+
+        <section class="sec3">
+            <div id="f1">
+                <h2>Напишите нам и мы свяжемся с вами</h2>
+                <form action="serv2.php">
+                    <input type="text" name="fname" placeholder="Ваше имя">
+                    <input type="email" name="eml" placeholder="Ваш e-mail">
+                    <textarea name="mess" placeholder="Текст комментария"></textarea>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+            <div id="f2">
+                <img src="../img/house.svg" alt="">
+                <p>+375 29 758 67 33</p>
+                <p>innovativebykhov@gmail.com</p>
+                <p>г.Быхов, ул. Советская., 2А</p>
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <footer id="foot0">
+        <div class="social mobsocial">
+            <a href="#"><img src="../img/s1.svg" alt=""></a>
+            <a href="#"><img src="../img/s2.svg" alt=""></a>
+            <a href="#"><img src="../img/s3.svg" alt=""></a>
+            <a href="#"><img src="../img/s4.svg" alt=""></a>
+        </div>
+        <div id="foot1">
+            <a href="about.html">О нас</a> |
+            <a href="#">О проекте</a>
+        </div>
+        <div id="foot2">Сайт разработан в рамках реализации инициативы «Быхов-инновационный»,
+            в рамках проекта «Поддержка экономического развития на местном уровне
+            в Республике Беларусь», который финансируется Европейским союзом (ЕС)
+            и реализуется Программой развития ООН (ПРООН) в партнерстве
+            с Министерством экономики Республики Беларусь
+        </div>
+        <div id="logo">
+            <img src="../img/logo1.svg" alt="">
+            <img src="../img/logo2.svg" alt="">
+            <img src="../img/logo3.svg" alt="">
+        </div>
+    </footer>
+
+
+    <div id="upward">
+        <div id="arr"><a href="#top"><img src="../img/up_arrow.svg" alt=""></a></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../libs/side_menu.js"></script>
+    <script src="../libs/incubator.js"></script>
+
+
+    <script>
+        function startres() {
+            res();
+            setTimeout('document.body.style.opacity="1"', 100)
+        }
+
+        function res() {
+            let w = document.documentElement.clientWidth;
+            let h = document.documentElement.clientHeight;
+            side.style.height = `${h-3-180}px`;
+            box = document.getElementsByClassName('box_menu');
+
+            for (i = 0; i < box.length; i++) {
+                let hi1, hi = h / 6 - 85;
+
+                if (hi < 55) {
+                    hi1 = 50
+                } else if (h > 1400) {
+                    hi1 = 263
+                } else {
+                    hi1 = hi
+                }
+
+                box[i].style.height = `${hi1}px`;
+            }
+
+            //  let st1 = window.getComputedStyle(mydiv0);
+            //     console.log(st1);
+
+            if (w < 1400) {
+                side.style.width = '275px';
+                mainCont.style.left = '321px';
+                foot0.style.marginLeft = '60px';
+                foot1.style.width = '220px';
+                foot2.style.marginLeft = '0';
+                f1.style.width = '54%';
+                f2.style.width = '23%';
+                m2.style.maxWidth = '480px';
+                m3.style.top = '-10px';
+                tel0.style.top = '0';
+
+                card_title = document.getElementsByClassName('card_title');
+                for (i = 0; i < card_title.length; i++) {
+                    card_title[i].style.fontSize = '18px';
+                }
+
+                //  tel = document.getElementsByClassName('tel');
+                //  for (i=0; i<tel.length; i++) {
+                //  tel[i].style.top = '0';  }         
+
+            } else {
+                side.style.width = '375px';
+                mainCont.style.left = '421px';
+                foot0.style.marginLeft = '160px';
+                foot1.style.width = '146px';
+                foot2.style.marginLeft = '176px';
+                f1.style.width = '64%';
+                f2.style.width = '18%';
+                m2.style.maxWidth = '620px';
+                m3.style.top = '-30px';
+                tel0.style.top = '-60px';
+
+                card_title = document.getElementsByClassName('card_title');
+                for (i = 0; i < card_title.length; i++) {
+                    card_title[i].style.fontSize = '22px';
+                }
+
+                // tel = document.getElementsByClassName('tel');
+                //  for (i=0; i<tel.length; i++) {
+                //  tel[i].style.top = '-60px';  }         
+
+
+            }
+            if (w<770) { 
+                foot0.style.marginLeft = '15px';
+            }
+
+            if (w<600) { 
+                foot0.style.marginLeft = '0px';
+                foot2.style.marginLeft = '15px';
+                f1.style.width = '276px';
+                f2.style.width = '219px';
+            }
+
+
+            // console.log(`w: ${w}, h: ${h}`)    
+
+            function scrl() {
+
+                let pw;
+
+                if (w < 1400) {
+                    pw = w - 120
+                } else {
+                    pw = w - 180
+                }
+                if (w<600) {pw = w - 230 }
+
+                let ph = h / 2 - 100
+
+                if (pageYOffset > h / 3) {
+
+                    arr.style.top = ph + "px"
+                    arr.style.left = pw + "px"
+
+                    upward.style.display = "block"
+
+                } else upward.style.display = ''
+            }
+
+            window.addEventListener('scroll', scrl)
+
+
+        }
+    </script>
+
+
+
+    <div id="mydiv0">
+        <div id="myform0" class="forrms">
+            <img onclick="mydiv0.style.display = 'none'" src="../img/esc.svg" alt="exit">
+            <h2>Напишите нам и мы свяжемся с вами</h2>
+            <form action="serv.php">
+                <input type="name" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="eml" placeholder="Ваш e-mail" required>
+                <input type="tel" name="tel" placeholder="Ваш номер телефона" required>
+                <p>+375 xx xxx xx xx</p>
+                <textarea name="mess" placeholder="Текст комментария" required></textarea>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+
+    </div>
+
+    <script src="../libs/form.js"></script>
+
+
+</body>
+
+</html>
