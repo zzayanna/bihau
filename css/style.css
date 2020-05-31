@@ -586,7 +586,7 @@ a:active {
 @media (max-width: 500px) {
 
     body {
-        max-width: var(--androidWidth);
+        max-width: 100%;
         min-width: 200px;
         height: 1277px;
         margin: 0 auto;
