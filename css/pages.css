@@ -456,7 +456,7 @@ input[type="submit"] {
     }
 
     main, footer {
-        width: var(--androidWidth);
+        max-width: var(--androidWidth);
     }
 
     .sec1 p{
