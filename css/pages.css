@@ -549,7 +549,7 @@ input[type="submit"] {
     .burg1 {
         height: 680px;
         top: 5px;
-        left: 60px;
+        left: 0;
         z-index: 1;
     }
 
