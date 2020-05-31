@@ -587,7 +587,7 @@ a:active {
 
     body {
         max-width: var(--androidWidth);
-        min-width: var(--androidWidth);;
+        min-width: 200px;
         height: 1277px;
         margin: 0 auto;
         font-family: Gotham Pro;
@@ -595,7 +595,7 @@ a:active {
     }
 
     #mainContainer {
-        width: var(--androidWidth);
+        max-width: var(--androidWidth);
         height: 1277px;
         display: flex;
         flex-wrap: wrap;
