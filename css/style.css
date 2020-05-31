@@ -586,7 +586,7 @@ a:active {
 @media (max-width: 500px) {
 
     body {
-        max-width: 100%;
+        max-width: 360px;
         min-width: 200px;
         height: 1277px;
         margin: 0 auto;
@@ -595,7 +595,7 @@ a:active {
     }
 
     #mainContainer {
-        max-width: 100%;
+        max-width: 360px;
         height: 1277px;
         display: flex;
         flex-wrap: wrap;

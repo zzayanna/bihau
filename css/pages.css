@@ -428,7 +428,7 @@ input[type="submit"] {
 
     body {
         max-width: 360px;
-        min-width: 360px;
+        min-width: 200px;
         margin: 0 auto; 
     }
 

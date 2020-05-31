@@ -121,7 +121,7 @@ function startres() {
     // alert(w+" "+h); 
     // 1349 х 657
       
-        // if (h>760) { 
+    // if (h>760) { 
          
      if (h<1024) { 
      bodyContainer.style.height = `${h-3}px`;
@@ -187,8 +187,8 @@ function startres() {
 
      if (w<600) { 
         bodyContainer.style.height = `1277px`;
-        let wid = window.innerWidth;
-        bodyContainer.style.width = wid + 'px';
+        bodyContainer.style.width = `${w}px`;
+        mainContainer.style.width =  `${w}px`;
         m = document.getElementsByClassName('m');
         for (i=0; i<m.length; i++) {
         m[i].style.height = '165px';  }   
