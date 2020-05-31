@@ -595,7 +595,7 @@ a:active {
     }
 
     #mainContainer {
-        max-width: var(--androidWidth);
+        max-width: 100%;
         height: 1277px;
         display: flex;
         flex-wrap: wrap;
