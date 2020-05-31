@@ -185,9 +185,10 @@ function startres() {
 
      }
 
-     if (w<500) { 
+     if (w<600) { 
         bodyContainer.style.height = `1277px`;
-        // bodyContainer.style.width = screen.width;
+        let wid = window.innerWidth;
+        bodyContainer.style.width = wid + 'px';
         m = document.getElementsByClassName('m');
         for (i=0; i<m.length; i++) {
         m[i].style.height = '165px';  }   
