@@ -141,6 +141,7 @@
                 border-radius: 22px;
                 margin-left: 10px;
             }
+
             #pic1 { 
                 width: 100%;
                 padding-left: 0;
@@ -195,7 +196,7 @@
             }
     
             #pic1 {
-                /* width: 200%; */
+                width: 200%;
                 padding-left: 0;
             }
     
