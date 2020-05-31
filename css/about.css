@@ -134,9 +134,16 @@
                 padding-left: 35px;
             }
 
+            .sec1 .pic {
+                max-width: 730px;
+                height: 368px;
+                overflow: hidden;
+                border-radius: 22px;
+                margin-left: 10px;
+            }
             #pic1 { 
-                width: 670pt;
-                padding-left: 20px;
+                width: 100%;
+                padding-left: 0;
             }
 
             #pic2 {
